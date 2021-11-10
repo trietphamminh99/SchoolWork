@@ -1,0 +1,334 @@
+
+LOWER(NAME)     COUNT(NAME)
+--------------- -----------
+jones                     1
+scoutten                  1
+
+
+employee IDs
+------------
+      200340
+      200330
+      200310
+      200280
+      200240
+      200220
+      200170
+      200140
+      200120
+      200010
+
+10 rows selected. 
+
+
+
+
+42 rows updated.
+
+
+EMPNO  FIRSTNAME    M LASTNAME        WOR PHON HIREDATE  JOB         EDLEVEL S BIRTHDATE     SALARY      BONUS       COMM PHONE                                             
+------ ------------ - --------------- --- ---- --------- -------- ---------- - --------- ---------- ---------- ---------- --------------------------------------------------
+250    DANIEL       S SMITH           D21 0961 30-OCT-99 CLERK            15 M 12-NOV-69      49180        400       1534 416-123-0961                                      
+300    PHILIP       X SMITH           E11 2095 19-JUN-02 OPERATOR         14 M 27-OCT-76      37750        400       1420 416-123-2095                                      
+
+
+        ID NAME            DEPT JOB        YEARS
+---------- --------- ---------- ----- ----------
+       340 Edwards           84 Sales          7
+       310 Graham            66 Sales         13
+        90 Koonitz           42 Sales          6
+        40 O'Brien           38 Sales          6
+        20 Pernal            20 Sales          8
+        70 Rothman           15 Sales          7
+       220 Smith             51 Sales          7
+       190 Sneider           20 Clerk          8
+       250 Wheeler           51 Clerk          6
+       150 Williams          51 Sales          6
+       280 Wilson            66 Sales          9
+
+        ID NAME            DEPT JOB        YEARS
+---------- --------- ---------- ----- ----------
+       130 Yamaguchi         42 Clerk          6
+
+12 rows selected. 
+
+
+NAME            DEPT JOB  
+--------- ---------- -----
+Burke             66 Clerk
+Gonzales          66 Sales
+Lea               66 Mgr  
+Wilson            66 Sales
+
+
+Name                          JOB      Variable Pay
+----------------------------- -------- ------------
+Haas, Christine               PRES           157970
+Kwan, Sally                   MANAGER        102110
+Quintana, Delores             ANALYST         76204
+Stern, Irving                 MANAGER         75330
+John, Reba                    DESIGNER        72827
+Natz, Kim                     ANALYST         71294
+Nicholls, Heather             ANALYST         71294
+Lucchessi, Vincenzo           SALESREP        71120
+O'Connell, Sean               CLERK           52190
+Hemminger, Dian               SALESREP        51720
+Schwartz, Eileen              OPERATOR        48850
+
+Name                          JOB      Variable Pay
+----------------------------- -------- ------------
+Lee, Wing                     FIELDREP        47900
+Yoshimura, Masatoshi          DESIGNER        47154
+Perez, Maria                  CLERK           40070
+Parker, John                  OPERATOR        36867
+Alonzo, Roy                   FIELDREP        34247
+
+16 rows selected. 
+
+
+NAME     
+---------
+Abrahams
+Daniels
+Davis
+Edwards
+Gonzales
+Hanes
+James
+Jones
+Quill
+Sanders
+Williams
+
+NAME     
+---------
+Wilson
+
+12 rows selected. 
+
+
+NAME      JOB       SALARY       COMM
+--------- ----- ---------- ----------
+Marenghi  Mgr     77506.75           
+Hanes     Mgr      80659.8           
+James     Clerk    43504.6      128.2
+Plotz     Mgr      78352.8           
+Ngan      Clerk    42508.2      206.6
+Naughton  Clerk   42954.75        180
+Yamaguchi Clerk    40505.9       75.6
+Fraye     Mgr        91150           
+Molinare  Mgr      82959.2           
+Kermisch  Clerk    42258.5      110.1
+Abrahams  Clerk   37009.75      236.5
+
+NAME      JOB       SALARY       COMM
+--------- ----- ---------- ----------
+Sneider   Clerk   34252.75      126.5
+Scoutten  Clerk    41508.6       84.2
+Lu        Mgr        90010           
+Lundquist Clerk    83369.8     189.65
+Daniels   Mgr     79260.25           
+Wheeler   Clerk      74460      513.3
+Jones     Mgr        81234           
+Lea       Mgr      88555.5           
+Quill     Mgr        89818           
+Burke     Clerk      49988       55.5
+Gafney    Clerk    43030.5        188
+
+22 rows selected. 
+
+
+JOB      compensation
+-------- ------------
+FIELDREP   40813.3333
+OPERATOR        43850
+DESIGNER      59891.6
+SALESREP        61420
+ANALYST    72930.6667
+MANAGER    92078.6667
+PRES           157970
+
+7 rows selected. 
+
+
+FIRSTNAME    LASTNAME        HIREDATE  BIRTHDATE    EDLEVEL  YEARS OF SERVICE
+------------ --------------- --------- --------- ---------- -----------------
+MARILYN      SCOUTTEN        07-JUL-03 21-FEB-79         17                19
+WILLIAM      JONES           11-APR-98 23-FEB-03         17                24
+DANIEL       SMITH           30-OCT-99 12-NOV-69         15                22
+PHILIP       SMITH           19-JUN-02 27-OCT-76         14                20
+
+
+LOWER(NAME)     COUNT(NAME)
+--------------- -----------
+jones                     1
+scoutten                  1
+
+
+employee IDs
+------------
+      200340
+      200330
+      200310
+      200280
+      200240
+      200220
+      200170
+      200140
+      200120
+      200010
+
+10 rows selected. 
+
+
+Error starting at line : 199 in command -
+ALTER TABLE employee RENAME COLUMN PHONENO TO PHONEEXT
+Error report -
+ORA-00957: duplicate column name
+00957. 00000 -  "duplicate column name"
+*Cause:    
+*Action:
+
+Error starting at line : 201 in command -
+ALTER TABLE employee ADD PHONE VARCHAR2(50 BYTE)
+Error report -
+ORA-01430: column being added already exists in table
+01430. 00000 -  "column being added already exists in table"
+*Cause:    
+*Action:
+
+42 rows updated.
+
+
+EMPNO  FIRSTNAME    M LASTNAME        WOR PHON HIREDATE  JOB         EDLEVEL S BIRTHDATE     SALARY      BONUS       COMM PHONE                                             
+------ ------------ - --------------- --- ---- --------- -------- ---------- - --------- ---------- ---------- ---------- --------------------------------------------------
+250    DANIEL       S SMITH           D21 0961 30-OCT-99 CLERK            15 M 12-NOV-69      49180        400       1534 416-123-0961                                      
+300    PHILIP       X SMITH           E11 2095 19-JUN-02 OPERATOR         14 M 27-OCT-76      37750        400       1420 416-123-2095                                      
+
+
+        ID NAME            DEPT JOB        YEARS
+---------- --------- ---------- ----- ----------
+       340 Edwards           84 Sales          7
+       310 Graham            66 Sales         13
+        90 Koonitz           42 Sales          6
+        40 O'Brien           38 Sales          6
+        20 Pernal            20 Sales          8
+        70 Rothman           15 Sales          7
+       220 Smith             51 Sales          7
+       190 Sneider           20 Clerk          8
+       250 Wheeler           51 Clerk          6
+       150 Williams          51 Sales          6
+       280 Wilson            66 Sales          9
+
+        ID NAME            DEPT JOB        YEARS
+---------- --------- ---------- ----- ----------
+       130 Yamaguchi         42 Clerk          6
+
+12 rows selected. 
+
+
+NAME            DEPT JOB  
+--------- ---------- -----
+Burke             66 Clerk
+Gonzales          66 Sales
+Lea               66 Mgr  
+Wilson            66 Sales
+
+
+Name                          JOB      Variable Pay
+----------------------------- -------- ------------
+Haas, Christine               PRES           157970
+Kwan, Sally                   MANAGER        102110
+Quintana, Delores             ANALYST         76204
+Stern, Irving                 MANAGER         75330
+John, Reba                    DESIGNER        72827
+Natz, Kim                     ANALYST         71294
+Nicholls, Heather             ANALYST         71294
+Lucchessi, Vincenzo           SALESREP        71120
+O'Connell, Sean               CLERK           52190
+Hemminger, Dian               SALESREP        51720
+Schwartz, Eileen              OPERATOR        48850
+
+Name                          JOB      Variable Pay
+----------------------------- -------- ------------
+Lee, Wing                     FIELDREP        47900
+Yoshimura, Masatoshi          DESIGNER        47154
+Perez, Maria                  CLERK           40070
+Parker, John                  OPERATOR        36867
+Alonzo, Roy                   FIELDREP        34247
+
+16 rows selected. 
+
+
+NAME     
+---------
+Abrahams
+Daniels
+Davis
+Edwards
+Gonzales
+Hanes
+James
+Jones
+Quill
+Sanders
+Williams
+
+NAME     
+---------
+Wilson
+
+12 rows selected. 
+
+
+NAME      JOB       SALARY       COMM
+--------- ----- ---------- ----------
+Marenghi  Mgr     77506.75           
+Hanes     Mgr      80659.8           
+James     Clerk    43504.6      128.2
+Plotz     Mgr      78352.8           
+Ngan      Clerk    42508.2      206.6
+Naughton  Clerk   42954.75        180
+Yamaguchi Clerk    40505.9       75.6
+Fraye     Mgr        91150           
+Molinare  Mgr      82959.2           
+Kermisch  Clerk    42258.5      110.1
+Abrahams  Clerk   37009.75      236.5
+
+NAME      JOB       SALARY       COMM
+--------- ----- ---------- ----------
+Sneider   Clerk   34252.75      126.5
+Scoutten  Clerk    41508.6       84.2
+Lu        Mgr        90010           
+Lundquist Clerk    83369.8     189.65
+Daniels   Mgr     79260.25           
+Wheeler   Clerk      74460      513.3
+Jones     Mgr        81234           
+Lea       Mgr      88555.5           
+Quill     Mgr        89818           
+Burke     Clerk      49988       55.5
+Gafney    Clerk    43030.5        188
+
+22 rows selected. 
+
+
+JOB      compensation
+-------- ------------
+FIELDREP   40813.3333
+OPERATOR        43850
+DESIGNER      59891.6
+SALESREP        61420
+ANALYST    72930.6667
+MANAGER    92078.6667
+PRES           157970
+
+7 rows selected. 
+
+
+FIRSTNAME    LASTNAME        HIREDATE  BIRTHDATE    EDLEVEL  YEARS OF SERVICE
+------------ --------------- --------- --------- ---------- -----------------
+MARILYN      SCOUTTEN        07-JUL-03 21-FEB-79         17                19
+WILLIAM      JONES           11-APR-98 23-FEB-03         17                24
+DANIEL       SMITH           30-OCT-99 12-NOV-69         15                22
+PHILIP       SMITH           19-JUN-02 27-OCT-76         14                20
+
