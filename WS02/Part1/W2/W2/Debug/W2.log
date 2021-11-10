@@ -1,0 +1,3 @@
+﻿  TimedEvents.cpp
+D:\Temporary assignment processer\OOP REVIEW\OOP345\OOP-Workshops-main\WS02\Part1\W2\W2\TimedEvents.cpp(33,55): warning C4267: 'initializing': conversion from 'size_t' to 'char', possible loss of data
+  W2.vcxproj -> D:\Temporary assignment processer\OOP REVIEW\OOP345\OOP-Workshops-main\WS02\Part1\W2\Debug\W2.exe
